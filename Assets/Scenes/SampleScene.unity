@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 594105571}
   - component: {fileID: 594105570}
   - component: {fileID: 594105569}
+  - component: {fileID: 594105574}
   m_Layer: 0
   m_Name: TempPlayer
   m_TagString: Untagged
@@ -376,6 +377,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &594105574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594105568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197c3198e29edd045b9e8a54a7ebbcea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spell: {fileID: 1950684304498686865, guid: c7dcbc19a26c77545881eadf74369b5b, type: 3}
+  spellSpeed: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
