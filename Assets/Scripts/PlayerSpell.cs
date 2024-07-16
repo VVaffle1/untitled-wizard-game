@@ -7,7 +7,7 @@ public class PlayerSpell : MonoBehaviour
 {
 
     public GameObject spell;
-    public float spellSpeed = 3.0f;
+    public float spellSpeed = 4.0f;
 
     const int LeftMouseButton = 0;
     void Start()

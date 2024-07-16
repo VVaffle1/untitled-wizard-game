@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|D:\\Github\\untitled-wizard-game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerSpell.cs",
               "ToolTip": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PlayerSpell.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerSpell.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-16T22:48:40.541Z",
               "EditorCaption": ""
