@@ -377,6 +377,7 @@
 "Assets/Scripts/PlayerLives.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerSpell.cs"
+"Assets/Scripts/Quit.cs"
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/Spell.cs"
 -langversion:9.0
