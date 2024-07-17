@@ -3,15 +3,31 @@
   "WorkspaceRootPath": "D:\\Github\\untitled-wizard-game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\playerspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|D:\\Github\\untitled-wizard-game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\playerlives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerlives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\scorekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scorekeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\playerspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|D:\\Github\\untitled-wizard-game\\assets\\scripts\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,11 +38,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "PlayerLives.cs",
+              "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PlayerLives.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerLives.cs",
+              "ToolTip": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PlayerLives.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerLives.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T22:00:21.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemySpawn.cs",
+              "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\EnemySpawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySpawn.cs",
+              "ToolTip": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\EnemySpawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySpawn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T21:59:23.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyMovement.cs",
+              "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\EnemyMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyMovement.cs",
+              "ToolTip": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\EnemyMovement.cs*",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyMovement.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T21:53:41.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScoreKeeper.cs",
+              "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\ScoreKeeper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreKeeper.cs",
+              "ToolTip": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\ScoreKeeper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScoreKeeper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T21:48:16.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Spell.cs",
               "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\Spell.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spell.cs",
@@ -39,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "PlayerSpell.cs",
               "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PlayerSpell.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerSpell.cs",
@@ -52,13 +120,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T23:17:57.071Z",
               "EditorCaption": ""

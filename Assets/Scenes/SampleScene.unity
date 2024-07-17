@@ -1492,10 +1492,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TempPlayer
       objectReference: {fileID: 0}
-    - target: {fileID: 6325407686436805458, guid: 47727d75cb7155644b3335db694e72ca, type: 3}
-      propertyPath: PlayerSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8850135511821341944, guid: 47727d75cb7155644b3335db694e72ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.07
