@@ -379,6 +379,7 @@
 "Assets/Scripts/PlayerSpell.cs"
 "Assets/Scripts/Quit.cs"
 "Assets/Scripts/SceneLoader.cs"
+"Assets/Scripts/ScoreKeeper.cs"
 "Assets/Scripts/Spell.cs"
 -langversion:9.0
 /deterministic

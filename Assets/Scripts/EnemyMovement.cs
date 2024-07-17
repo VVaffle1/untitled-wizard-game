@@ -25,7 +25,11 @@ public class EnemyMovement : MonoBehaviour
     {
         if(other.tag == "Fireball")
         {
+            FindObjectOfType<ScoreKeeper>().ScoreIncrease();
             Destroy(gameObject);
         }
+
+
     }
+    
 }
