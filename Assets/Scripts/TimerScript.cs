@@ -23,6 +23,11 @@ public class TimerScript : MonoBehaviour
 
         if(timerCountdown <= 0)
         {
+            GameObject[] allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject obj in allEnemies)
+            {
+                Destroy(obj);
+            }
             waveDisplay.waveNumber++;
             timerCountdown = 45;
             canCount = false;
