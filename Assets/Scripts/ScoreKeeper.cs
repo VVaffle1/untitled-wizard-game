@@ -5,19 +5,41 @@ using UnityEngine.UI;
 using TMPro;
 public class ScoreKeeper : MonoBehaviour
 {
+    public int CurrentHighscore = 0;
     int score = 0;
+
+    [SerializeField] GameObject HighscoreText;
+
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<TextMeshProUGUI>().text = "Score: " + score.ToString();
-
+        if (PlayerPrefs.HasKey("Highscore"))
+        {
+            CurrentHighscore = PlayerPrefs.GetInt("Highscore");
+        }
+        UpdateText();
     }
 
     // Update is called once per frame
      public void ScoreIncrease()
     {
         score += 100;
-        Debug.Log(score);
+        if (score > CurrentHighscore)
+        {
+            CurrentHighscore = score;
+        }
+
+        UpdateText();
+    }
+
+    void UpdateText()
+    {
         GetComponent<TextMeshProUGUI>().text = "Score: " + score.ToString();
+        if (HighscoreText == null)
+        {
+            Debug.Log("Insert a highscore text into the Score Canvas please.");
+            return;
+        }
+        HighscoreText.GetComponent<TextMeshProUGUI>().text = "Highscore: " + CurrentHighscore.ToString();
     }
 }

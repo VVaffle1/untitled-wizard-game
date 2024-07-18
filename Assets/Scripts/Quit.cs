@@ -21,4 +21,10 @@ public class Quit : MonoBehaviour
     {
         Application.Quit();
     }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.SetInt("Highscore", FindObjectOfType<ScoreKeeper>().CurrentHighscore);
+        PlayerPrefs.Save();
+    }
 }
