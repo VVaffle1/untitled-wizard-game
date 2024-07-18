@@ -381,6 +381,7 @@
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/ScoreKeeper.cs"
 "Assets/Scripts/Spell.cs"
+"Assets/Scripts/StartButton.cs"
 -langversion:9.0
 /deterministic
 /optimize+
