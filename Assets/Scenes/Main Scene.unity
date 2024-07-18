@@ -542,6 +542,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &320710859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 320710862}
+  - component: {fileID: 320710861}
+  - component: {fileID: 320710860}
+  m_Layer: 0
+  m_Name: Quit Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &320710860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320710859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361032b6c633e1648ae07bd6b009269c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &320710861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320710859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124b6d7369f2e5f4d8f468a68309616b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &320710862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320710859}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.08622758, y: -0.48803246, z: -9.94539}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +702,6 @@ GameObject:
   - component: {fileID: 649597231}
   - component: {fileID: 649597230}
   - component: {fileID: 649597229}
-  - component: {fileID: 649597228}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -653,18 +709,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &649597228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649597227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 361032b6c633e1648ae07bd6b009269c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &649597229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,7 +940,7 @@ GameObject:
   - component: {fileID: 1289758895}
   - component: {fileID: 1289758894}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -966,7 +1010,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 649597228}
+      - m_Target: {fileID: 320710860}
         m_TargetAssemblyTypeName: Quit, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1327,7 +1371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1172057729631568762, guid: 7fc7dddccc792814d9611bca100ea041, type: 3}
-  timeToSpawn: 5
+  timeToSpawn: 3
   spawnCountdown: 2
   SpawnPerWave: 1
 --- !u!4 &1739647668
@@ -1728,3 +1772,4 @@ SceneRoots:
   - {fileID: 1997602859}
   - {fileID: 649597231}
   - {fileID: 99632722}
+  - {fileID: 320710862}
