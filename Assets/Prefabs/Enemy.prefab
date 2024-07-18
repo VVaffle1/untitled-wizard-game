@@ -162,5 +162,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8556723303192337117}
-  playerPosition: {fileID: 3212651458790911990, guid: 47727d75cb7155644b3335db694e72ca, type: 3}
   speed: 1.5
+  damageSoundClip: {fileID: 8300000, guid: 408c6f7ee10bf864cb510b92ba97556a, type: 3}

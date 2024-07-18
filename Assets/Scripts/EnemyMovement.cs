@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed = 1.5f;
     private GameObject playerPosition;
+    [SerializeField] private AudioClip damageSoundClip;
     
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class EnemyMovement : MonoBehaviour
         if(other.tag == "Fireball")
         {
             FindObjectOfType<ScoreKeeper>().ScoreIncrease();
+            AudioSource.PlayClipAtPoint(damageSoundClip,new Vector2(-0.18f, 1.2f),1f); 
             Destroy(gameObject);
         }
 

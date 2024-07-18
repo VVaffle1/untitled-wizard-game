@@ -8,6 +8,7 @@ public class PlayerSpell : MonoBehaviour
 
     public GameObject spell;
     public float spellSpeed = 4.0f;
+    [SerializeField] private AudioClip fireClip;
 
     const int LeftMouseButton = 0;
     void Start()
@@ -21,6 +22,7 @@ public class PlayerSpell : MonoBehaviour
         if (Input.GetMouseButtonDown(LeftMouseButton))
         {
             OnMouseClick();
+            AudioSource.PlayClipAtPoint(fireClip, transform.position, 1f);
         }
     }
     void OnMouseClick()
