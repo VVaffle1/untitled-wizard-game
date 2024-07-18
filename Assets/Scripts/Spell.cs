@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Spell : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool HasHit = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
-        
+        if (collision.tag == "Enemy" && collision.gameObject.GetComponent<EnemyMovement>().IsAlive == true)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnBecameInvisible()
     {
