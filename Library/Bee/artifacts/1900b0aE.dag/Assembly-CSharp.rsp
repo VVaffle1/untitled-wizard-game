@@ -383,6 +383,8 @@
 "Assets/Scripts/ScoreKeeper.cs"
 "Assets/Scripts/Spell.cs"
 "Assets/Scripts/StartButton.cs"
+"Assets/Scripts/TimerScript.cs"
+"Assets/Scripts/WaveManagerScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+
