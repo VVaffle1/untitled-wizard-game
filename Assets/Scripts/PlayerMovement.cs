@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] float PlayerSpeed = 2f;
     private Rigidbody2D rb;
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,19 +20,24 @@ public class PlayerMovement : MonoBehaviour
     {
         MovementX();
         MovementY();
+        animator.SetFloat("Speed", PlayerSpeed);
     }
 
 
     private void MovementX()
     {
         float moveInput = Input.GetAxis("Horizontal");
-        
+        animator.SetFloat("Horizontal", moveInput);
+      
+
         rb.velocity = new Vector2(moveInput * (PlayerSpeed), rb.velocity.y);
         
     }
     private void MovementY()
     {
         float moveInput = Input.GetAxis("Vertical");
+        animator.SetFloat("Vertical", moveInput);
+
         rb.velocity = new Vector2(rb.velocity.x, moveInput * (PlayerSpeed));
     }
 }
