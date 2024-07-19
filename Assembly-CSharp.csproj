@@ -55,24 +55,30 @@
     <UnityVersion>2022.3.36f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerLives.cs" />
+    <Compile Include="Assets\Scripts\Movement Scripts\ALTERNATEPlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Buttons\RetryButton.cs" />
     <Compile Include="Assets\Scripts\PlayerSpell.cs" />
-    <Compile Include="Assets\Scripts\StartButton.cs" />
+    <Compile Include="Assets\Scripts\Movement Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Quit.cs" />
-    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
+    <Compile Include="Assets\Scripts\FloatingPointHandler.cs" />
+    <Compile Include="Assets\Scripts\Movement Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Buttons\QuitButton.cs" />
+    <Compile Include="Assets\Scripts\ScreenShake.cs" />
     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Scripts\WaveManagerScript.cs" />
+    <Compile Include="Assets\Scripts\Buttons\TutorialButton.cs" />
+    <Compile Include="Assets\Scripts\Buttons\StartButton.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\PowerUps.cs" />
     <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
     <Compile Include="Assets\Scripts\TimerScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Spell.cs" />
   </ItemGroup>
   <ItemGroup>
