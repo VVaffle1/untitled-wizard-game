@@ -7,6 +7,9 @@ public class EnemySpawn : MonoBehaviour
     public GameObject Enemy;
     public float timeToSpawn, spawnCountdown;
     public int SpawnPerWave = 1;
+    int CurrentWave = 0;
+
+    [SerializeField] int IncreaseEnemiesPerWave = 1;
 
     void Start()
     {
@@ -17,7 +20,7 @@ public class EnemySpawn : MonoBehaviour
     {
         spawnCountdown -= Time.deltaTime;
 
-        if(spawnCountdown <= 0)
+        if(spawnCountdown <= 0 && FindAnyObjectByType<TimerScript>().timerCountdown > 0)
         {
             for(int i = 0; i < SpawnPerWave; i++)
             {
@@ -28,7 +31,11 @@ public class EnemySpawn : MonoBehaviour
             }
             spawnCountdown = timeToSpawn;
 
-            SpawnPerWave += Random.Range(1, 2);
+            CurrentWave += 1;
+            if (CurrentWave % 3 == 0)
+            {
+                SpawnPerWave += IncreaseEnemiesPerWave;
+            }
         }
     }
 
