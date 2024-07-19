@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float speed = 1.5f;
+    [SerializeField] public static float speed = 1.5f;
     private GameObject playerPosition;
     [SerializeField] private AudioClip damageSoundClip;
 

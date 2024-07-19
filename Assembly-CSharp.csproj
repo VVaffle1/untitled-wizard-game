@@ -62,11 +62,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerLives.cs" />
     <Compile Include="Assets\Scripts\PlayerSpell.cs" />
+    <Compile Include="Assets\Scripts\StartButton.cs" />
     <Compile Include="Assets\Scripts\Quit.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
+    <Compile Include="Assets\Scripts\WaveManagerScript.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\PowerUps.cs" />
     <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
+    <Compile Include="Assets\Scripts\TimerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Spell.cs" />
   </ItemGroup>
