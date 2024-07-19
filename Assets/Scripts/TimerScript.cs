@@ -5,15 +5,14 @@ using TMPro;
 
 public class TimerScript : MonoBehaviour
 {
-    [SerializeField] float timerCountdown = 60;
+    [SerializeField] public float timerCountdown = 45;
     public WaveManagerScript waveDisplay;
     [SerializeField] private bool canCount = false;
-    [SerializeField] GameObject waveTextBox; 
+    [SerializeField] GameObject waveTextBox;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<TextMeshProUGUI>().text = timerCountdown.ToString("F0");
     }
 
     // Update is called once per frame
@@ -24,6 +23,7 @@ public class TimerScript : MonoBehaviour
         if(timerCountdown <= 0)
         {
             GameObject[] allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+            if (allEnemies.Length > 0) { return; }
             foreach (GameObject obj in allEnemies)
             {
                 Destroy(obj);
@@ -45,7 +45,6 @@ public class TimerScript : MonoBehaviour
             timerCountdown -= Time.deltaTime;
         }
     }
-
     public void StartTimer()
     {
             waveTextBox.SetActive(false);

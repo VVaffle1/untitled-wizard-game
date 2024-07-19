@@ -14,7 +14,6 @@ public class PowerUps : MonoBehaviour
     void Start()
     {
         InvokeRepeating("PowerUpSpawn", 7, 15);
-
     }
 
     // Update is called once per frame
@@ -22,6 +21,8 @@ public class PowerUps : MonoBehaviour
 
     public void PowerUpSpawn()
     {
+        if (FindAnyObjectByType<TimerScript>().timerCountdown <= 0) { return; }
+
         float screenX = Random.Range(-4f, 4f);
         float screenY = Random.Range(-4f, 4f);
         Vector2 randomPosition = new Vector2(screenX, screenY);
@@ -71,7 +72,6 @@ public class PowerUps : MonoBehaviour
         yield return new WaitForSeconds(10);
         EnemyMovement.speed = 1.5f;
         Destroy(gameObject);
-
     }
 }
 
