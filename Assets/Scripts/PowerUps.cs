@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-
+    
     public GameObject powerUp;
 
     // Start is called before the first frame update
@@ -29,8 +29,9 @@ public class PowerUps : MonoBehaviour
     {
         if (other.gameObject.name.Equals("TempPlayer"))
         {
-            PowerUpEffect();
- 
+            //PowerUpEffect();
+            FindObjectOfType<ScoreKeeper>().score += 500;
+            FindObjectOfType<ScoreKeeper>().UpdateText();
             Vector3 timeOutCorner = transform.position + new Vector3(0f, 100f, 0f);
             transform.position = timeOutCorner;
         }
@@ -51,9 +52,9 @@ public class PowerUps : MonoBehaviour
     IEnumerator PlayerSpeedBoost()
     {
         PlayerMovement.PlayerSpeed = 4f;
-       
+
         yield return new WaitForSeconds(5);
-        
+
         PlayerMovement.PlayerSpeed = 2f;
         Destroy(gameObject);
 

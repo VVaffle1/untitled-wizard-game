@@ -6,7 +6,7 @@ using TMPro;
 public class ScoreKeeper : MonoBehaviour
 {
     public int CurrentHighscore = 0;
-    int score = 0;
+    public int score = 0;
 
     [SerializeField] GameObject HighscoreText;
 
@@ -32,7 +32,7 @@ public class ScoreKeeper : MonoBehaviour
         UpdateText();
     }
 
-    void UpdateText()
+    public void UpdateText()
     {
         GetComponent<TextMeshProUGUI>().text = "Score: " + score.ToString();
         if (HighscoreText == null)
