@@ -384,6 +384,7 @@
 "Assets/Scripts/Movement Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerLives.cs"
 "Assets/Scripts/PlayerSpell.cs"
+"Assets/Scripts/PlayMusic.cs"
 "Assets/Scripts/PowerUps.cs"
 "Assets/Scripts/Quit.cs"
 "Assets/Scripts/SceneLoader.cs"
