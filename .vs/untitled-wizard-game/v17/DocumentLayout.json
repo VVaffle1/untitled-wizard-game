@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Github\\untitled-wizard-game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\powerups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\powerups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|D:\\Github\\untitled-wizard-game\\assets\\scripts\\playerlives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerlives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|d:\\github\\untitled-wizard-game\\assets\\scripts\\powerups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\powerups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6BB317D-1CE4-2C94-A1A2-D7E2907014EF}|Assembly-CSharp.csproj|D:\\Github\\untitled-wizard-game\\assets\\scripts\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PowerUps.cs",
               "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PowerUps.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUps.cs",
@@ -59,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PlayerLives.cs",
               "DocumentMoniker": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PlayerLives.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerLives.cs",
               "ToolTip": "D:\\Github\\untitled-wizard-game\\Assets\\Scripts\\PlayerLives.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerLives.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T22:00:21.76Z",
               "EditorCaption": ""

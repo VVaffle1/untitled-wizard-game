@@ -16,8 +16,11 @@ public class PlayerLives : MonoBehaviour
     void Update()
     {
         
-        
+        if (playerHealth <= 0)
+        {
         StartCoroutine(GameOverTime());
+
+        }
 
         
     }
@@ -28,7 +31,6 @@ public class PlayerLives : MonoBehaviour
         {
 
             playerHealth--;
-            if (playerHealth <= 0) { return; }
             Vector3 difference = (transform.position - other.transform.position).normalized;
 
             StartCoroutine(Knockback(difference));
