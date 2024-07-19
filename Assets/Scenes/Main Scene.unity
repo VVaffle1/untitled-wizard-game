@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 99632720}
   - component: {fileID: 99632719}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Timer Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -802,6 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp: {fileID: 9077456290655540979, guid: a3de33c7de0e98046b702983048c562b, type: 3}
+  highFloatUp: {fileID: 0}
   gemSound: {fileID: 0}
 --- !u!4 &786594951
 Transform:
@@ -2156,7 +2157,7 @@ PrefabInstance:
       objectReference: {fileID: 3059509445886895486}
     - target: {fileID: 6325407686436805458, guid: 47727d75cb7155644b3335db694e72ca, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8850135511821341944, guid: 47727d75cb7155644b3335db694e72ca, type: 3}
       propertyPath: m_LocalScale.x
@@ -2259,7 +2260,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3059509445886895485}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1d6937f4fc16be49b5d350b763353d0, type: 3}
   m_Name: 
