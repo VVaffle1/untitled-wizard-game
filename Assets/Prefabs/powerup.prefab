@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp: {fileID: 9077456290655540979}
+  gemSound: {fileID: 8300000, guid: ff40064f17be21347819b3036f3859cc, type: 3}
