@@ -375,6 +375,7 @@
 "Assets/Scripts/Buttons/QuitButton.cs"
 "Assets/Scripts/Buttons/RetryButton.cs"
 "Assets/Scripts/Buttons/StartButton.cs"
+"Assets/Scripts/Buttons/TutorialButton.cs"
 "Assets/Scripts/DontDestroy.cs"
 "Assets/Scripts/EnemySpawn.cs"
 "Assets/Scripts/FloatingPointHandler.cs"

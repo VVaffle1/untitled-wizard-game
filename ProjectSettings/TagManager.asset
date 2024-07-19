@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Grass
   - Crystal
+  - Score
   layers:
   - Default
   - TransparentFX
