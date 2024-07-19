@@ -165,7 +165,7 @@ MonoBehaviour:
   rb: {fileID: 8556723303192337117}
   damageSoundClip: {fileID: 8300000, guid: 408c6f7ee10bf864cb510b92ba97556a, type: 3}
   Explosion: {fileID: 4413561651247193860, guid: f86dc8672518d9645ac61dd3adc30ab4, type: 3}
-  floatingPoints: {fileID: 8136475020010174902, guid: 3ec6691375e01514e9c16eefd2358746, type: 3}
+  floatingPoints: {fileID: 2370184578275866017, guid: a39ddf7d5889d874db1dcb9f2583c26a, type: 3}
   cameraShake: {fileID: 5566242574233381206, guid: 76f1ddb777c320c41888eae047de2753, type: 3}
   IsAlive: 1
 --- !u!95 &865891272284238726
