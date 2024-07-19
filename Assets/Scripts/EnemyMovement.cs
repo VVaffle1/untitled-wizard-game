@@ -8,6 +8,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] public static float speed = 1.5f;
     private GameObject playerPosition;
     [SerializeField] private AudioClip damageSoundClip;
+    public GameObject Explosion;
+    public ScreenShake cameraShake;
 
     public bool IsAlive = true;
     
@@ -37,10 +39,12 @@ public class EnemyMovement : MonoBehaviour
     IEnumerator Death()
     {
         IsAlive = false;
+        Instantiate(Explosion, transform.position, Quaternion.identity);
+        StartCoroutine(cameraShake.Shake(.15f, .4f));
         FindObjectOfType<ScoreKeeper>().ScoreIncrease();
         AudioSource.PlayClipAtPoint(damageSoundClip, new Vector2(-0.18f, 1.2f), 1f);
         GetComponent<SpriteRenderer>().color = Color.red;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.08f);
         Destroy(gameObject);
     }
 

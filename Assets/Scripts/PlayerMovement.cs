@@ -5,9 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public static float PlayerSpeed = 5f;
+    public static float PlayerSpeed = 4f;
     private Rigidbody2D rb;
     public Animator animator;
+    private bool isTouchingGrass;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,15 @@ public class PlayerMovement : MonoBehaviour
         MovementX();
         MovementY();
         animator.SetFloat("Speed", PlayerSpeed);
+
+        if (isTouchingGrass == true)
+        {
+            PlayerSpeed = 2f;
+        }
+        else 
+        {
+            PlayerSpeed = 4f;
+        }
     }
 
 
@@ -40,4 +50,21 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(rb.velocity.x, moveInput * (PlayerSpeed));
     }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.tag == "Grass")
+        {
+            isTouchingGrass = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Grass")
+        {
+            isTouchingGrass = false;
+        }
+    }
+
 }

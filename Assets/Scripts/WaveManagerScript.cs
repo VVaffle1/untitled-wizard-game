@@ -13,7 +13,7 @@ public class WaveManagerScript : MonoBehaviour
     // Start is called before the first frame update
     public void Awake() 
     {
-        StartCoroutine(DisplayWave());
+        StartCoroutine(FirstDisplayWave());
     }
 
     // Update is called once per frame
@@ -25,6 +25,12 @@ public class WaveManagerScript : MonoBehaviour
     public IEnumerator DisplayWave()
     {
         yield return new WaitForSeconds(2f);
+        timerText.StartTimer();
+    }
+
+    public IEnumerator FirstDisplayWave()
+    {
+        yield return new WaitForSeconds(5f);
         timerText.StartTimer();
     }
 }

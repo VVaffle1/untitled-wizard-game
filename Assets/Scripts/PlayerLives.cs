@@ -19,7 +19,7 @@ public class PlayerLives : MonoBehaviour
     {
         if(playerHealth <= 0)
         {
-            FindObjectOfType<SceneLoader>().GameOver();
+           StartCoroutine(GameOverTime());
             
         }
     }
@@ -30,5 +30,11 @@ public class PlayerLives : MonoBehaviour
         {
             playerHealth--;
         }
+    }
+
+    IEnumerator GameOverTime()
+    {
+        yield return new WaitForSeconds(0.1f);
+        FindObjectOfType<SceneLoader>().GameOver();
     }
 }

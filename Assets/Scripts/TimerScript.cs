@@ -32,7 +32,7 @@ public class TimerScript : MonoBehaviour
             timerCountdown = 45;
             canCount = false;
             waveTextBox.SetActive(true);
-            waveDisplay.Awake();
+            StartCoroutine(waveDisplay.DisplayWave());
         }
 
         if(canCount == true && timerCountdown > 0)

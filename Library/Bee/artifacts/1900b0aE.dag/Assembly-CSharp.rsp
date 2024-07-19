@@ -383,6 +383,7 @@
 "Assets/Scripts/Quit.cs"
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/ScoreKeeper.cs"
+"Assets/Scripts/ScreenShake.cs"
 "Assets/Scripts/Spell.cs"
 "Assets/Scripts/StartButton.cs"
 "Assets/Scripts/TimerScript.cs"
