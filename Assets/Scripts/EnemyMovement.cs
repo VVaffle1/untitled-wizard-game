@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     private GameObject playerPosition;
     [SerializeField] private AudioClip damageSoundClip;
     public GameObject Explosion;
+    public GameObject floatingPoints;
     public ScreenShake cameraShake;
 
     public bool IsAlive = true;
@@ -45,6 +46,7 @@ public class EnemyMovement : MonoBehaviour
         AudioSource.PlayClipAtPoint(damageSoundClip, new Vector2(-0.18f, 1.2f), 1f);
         GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(0.08f);
+        Instantiate(floatingPoints, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
@@ -52,5 +54,4 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, playerPosition.transform.position, speed * Time.deltaTime);
     }
-
 }
