@@ -28,6 +28,11 @@ public class TimerScript : MonoBehaviour
             {
                 Destroy(obj);
             }
+            GameObject[] allCrystals = GameObject.FindGameObjectsWithTag("Crystal");
+            foreach (GameObject obj in allCrystals)
+            {
+                Destroy(obj);
+            }
             waveDisplay.waveNumber++;
             timerCountdown = 45;
             canCount = false;
