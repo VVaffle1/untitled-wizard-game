@@ -382,6 +382,7 @@
 "Assets/Scripts/PlayerSpell.cs"
 "Assets/Scripts/PowerUps.cs"
 "Assets/Scripts/Quit.cs"
+"Assets/Scripts/QuitButton.cs"
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/ScoreKeeper.cs"
 "Assets/Scripts/ScreenShake.cs"

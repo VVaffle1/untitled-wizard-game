@@ -6,6 +6,8 @@ public class PowerUps : MonoBehaviour
 {
     
     public GameObject powerUp;
+    public GameObject highFloatUp;
+
     [SerializeField] private AudioClip gemSound;  
 
     // Start is called before the first frame update
@@ -32,6 +34,7 @@ public class PowerUps : MonoBehaviour
         {
             //PowerUpEffect();
             FindObjectOfType<ScoreKeeper>().score += 500;
+            Instantiate(highFloatUp, transform.position, Quaternion.identity);
             FindObjectOfType<ScoreKeeper>().UpdateText();
             AudioSource.PlayClipAtPoint(gemSound, transform.position);
             Vector3 timeOutCorner = transform.position + new Vector3(0f, 100f, 0f);

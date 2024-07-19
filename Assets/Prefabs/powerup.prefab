@@ -144,4 +144,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp: {fileID: 9077456290655540979}
+  highFloatUp: {fileID: 1220866787746643229, guid: 4342e2fecc96b5a49926089d6d4d966d, type: 3}
   gemSound: {fileID: 8300000, guid: ff40064f17be21347819b3036f3859cc, type: 3}
