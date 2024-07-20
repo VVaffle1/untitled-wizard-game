@@ -6,6 +6,7 @@ public class TutorialButton : MonoBehaviour
 {
 
     public GameObject tutorialScreen;
+    public bool isClicked = false; 
 
     void Start()
     {
@@ -14,7 +15,17 @@ public class TutorialButton : MonoBehaviour
 
     public void StartTutorial()
     {
-        tutorialScreen.GetComponent<SpriteRenderer>().enabled = true;
+        if(isClicked == false)
+        {
+            tutorialScreen.GetComponent<SpriteRenderer>().enabled = true;
+            isClicked = true;
+        }
+        else
+        {
+            tutorialScreen.GetComponent<SpriteRenderer>().enabled = false;
+            isClicked = false;
+        }
     }
+    
 
 }

@@ -8,6 +8,7 @@ public class PlayerLives : MonoBehaviour
 {
     public int playerHealth = 3;
     public SceneLoader sceneControl;
+    public AudioSource hurtClip;
 
     public float knockbackDuration = 0.2f;
     public float knockbackSpeed = 10f;
@@ -34,19 +35,22 @@ public class PlayerLives : MonoBehaviour
             Vector3 difference = (transform.position - other.transform.position).normalized;
 
             StartCoroutine(Knockback(difference));
+            StartCoroutine(FlashRed());
+            
         }
     }
 
     IEnumerator GameOverTime()
     {
-        yield return new WaitForSeconds(0.1f);
+        
+        yield return new WaitForSeconds(0.2f);
         FindObjectOfType<SceneLoader>().GameOver();
     }
 
     IEnumerator Knockback(Vector3 direction)
     {
         float timer = 0f;
-
+        hurtClip.Play();
         while (timer < knockbackDuration)
         {
             Debug.Log("worked");
@@ -54,5 +58,12 @@ public class PlayerLives : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
+    }
+
+    IEnumerator FlashRed()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(0.4f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

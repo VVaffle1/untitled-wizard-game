@@ -34,12 +34,12 @@ public class ScoreKeeper : MonoBehaviour
 
     public void UpdateText()
     {
-        GetComponent<TextMeshProUGUI>().text = "Score: " + score.ToString();
+        GetComponent<TextMeshProUGUI>().text = score.ToString();
         if (HighscoreText == null)
         {
             Debug.Log("Insert a highscore text into the Score Canvas please.");
             return;
         }
-        HighscoreText.GetComponent<TextMeshProUGUI>().text = "Highscore: " + CurrentHighscore.ToString();
+        HighscoreText.GetComponent<TextMeshProUGUI>().text = CurrentHighscore.ToString();
     }
 }
